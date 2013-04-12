@@ -1,0 +1,29 @@
+body{
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+nav {
+	margin:2em auto 0;
+	background-color:#ededed;
+	border-radius: 6px;
+}
+
+nav ul {
+	list-style-type: none;
+	width:200px;
+	margin:2em auto;
+	font-weight:400;
+}
+
+.button{
+	width:100%;
+	margin:1em 0;
+	background-color:#666;
+	border:0;
+}
+
+#main h1{
+	margin:20% auto 0;
+	font-weight:700;
+	text-align:center;
+}

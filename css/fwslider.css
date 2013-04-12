@@ -1,0 +1,227 @@
+/*------------------------------------------------------------------------
+
+        Name: Full Width Slider 2.0
+        Design and Develpment: eightyclouds
+        Author URI: http://www.eightyclouds.com
+        Version: 1.0
+
+--------------------------------------------------------------------------
+
+   01. CSS Reset
+   02. Slider Styles
+   03. Media Query Max Width 1300, Min Width 720
+   04. Media Query Max Width 719
+   
+*/
+
+/* ------------------------------- 1. Resets ------------------------------- */
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,small, strong, sub, sup, var,
+b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0;  padding: 0; border: 0;  outline: 0;  font-size: 100%;  vertical-align: baseline;  background: transparent; }
+
+body { line-height: 1; }
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { display: block; }
+
+nav ul {list-style: none;}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ''; content: none; }
+
+a { margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+input, select { vertical-align: middle; }
+
+/* ------------------------------- 2. Slider Styles ------------------------------- */
+
+#fwslider {
+    position: relative;
+    background:#000;
+    width:100%;
+}
+
+#fwslider .slider_container {
+}
+
+#fwslider .slide {
+    display: none;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: 0;
+    width:100%;
+}
+
+#fwslider .slide img {
+    width:100%;
+}
+
+#fwslider .slidePrev {
+    background:#000;
+    width:50px;
+    height:50px;
+    position: absolute;
+    top:50%;
+    left:-50px;
+    opacity:0.5;
+    z-index: 10;
+}
+
+#fwslider .slidePrev span {
+    background-image:url("../img/left_arrow.png");
+    width:50px;
+    height:50px;
+    float:left;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#fwslider .slideNext {
+    background:#000;
+    width:50px;
+    height:50px;
+    position: absolute;
+    top:50%;
+    right:-50px;
+    opacity:0.5;
+    z-index: 10;
+}
+
+#fwslider .slideNext span {
+    background-image:url("../img/right_arrow.png");
+    width:50px;
+    height:50px;
+    float:left;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#fwslider .timers {
+    height:4px;
+    position: absolute;
+    bottom:15px;
+    right:0;
+    z-index: 3;
+}
+
+#fwslider .timer {
+    height:4px;
+    width:40px;
+    background-color: #000;
+    float:left;
+    margin-right: 10px;
+}
+
+#fwslider .progress {
+    height:4px;
+    width:0%;
+    background-color: #FC3;
+    float:left;
+}
+
+#fwslider .slide_content {
+    top:0;
+    left:0;
+    position: absolute;
+    width:100%;
+    height:100%;
+}
+
+#fwslider .slide_content_wrap { /* Slider Text Content Container Style */
+    max-width:1280px;
+    margin:15% auto;
+}
+
+#fwslider .title {  /* Slider Title Style */
+    opacity: 0;
+    color:#fff;     
+    font-size:36px;
+    background:#000;
+    padding:10px;
+    float:left;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+}
+
+#fwslider .description { /* Slider Description Style */
+    opacity: 0;
+    color:#FC3;
+    font-size:18px;
+    background:#000;
+    padding:10px;
+    clear:both;
+    float:left;
+    margin-top:2px;
+    line-height:24px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+}
+
+#fwslider .readmore { /* Slider Read More button Style */
+    opacity: 0;
+    clear:both;
+    float:left;
+    text-transform:uppercase;
+    font-size:10px;
+    color:#919191;
+    background:#000;
+    padding:10px;
+    text-decoration: none;
+    margin-top:2px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+}
+
+#fwslider .readmore:hover {
+    color:#fff;
+}
+
+.footer {
+    width:100%;
+    float:left;
+    text-align:center;
+}
+
+.footer p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size:12px;
+    color:#585858;
+    margin-top:20px;
+}
+
+/* ------------------------------- 3. Media Query Max Width 1300, Min Width 720 ------------------------------- */
+
+
+
+@media only screen and (min-width:720px) and (max-width: 1300px) {
+
+    #fwslider .slide_content_wrap { margin-left:50px; margin-top:15%;}
+    #fwslider .title { font-size:26px; }
+    #fwslider .description {  font-size:12px;}
+
+}
+
+/* ------------------------------- 4. Media Query Max Width 719 ------------------------------- */
+
+@media only screen and (max-width:719px) {
+
+    #fwslider .slide_content_wrap { display:none; }
+    #fwslider .timers { display:none; }
+    #fwslider .slide_content {cursor: pointer;}
+
+}
