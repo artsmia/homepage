@@ -11,7 +11,7 @@
 	<!-- Set the viewport width to device width for mobile -->
 	<meta name="viewport" content="width=device-width, inital-scale=1.0" />
 	
-	<title>Welcome to the Minneapolis Institute of Arts</title>
+	<title>A museum working to inspire wonder through the power of art.</title>
 	
 	<!-- Included CSS Files (Uncompressed) -->
 	<!--
@@ -22,28 +22,30 @@
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	
 	<!-- Included CSS Files (Compressed) -->
-	<link rel="stylesheet" href="css/foundation.min.css">
-	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css"  />
-	<link rel="stylesheet" href="css/proto9d.css">
-	 <link rel="stylesheet" href="css/miacolors.css">
+	<!--<link rel="stylesheet" href="css/foundation3.min.css">-->
+	<link rel="stylesheet" href="css/foundation-16.css">
+	<!--<link rel="stylesheet" href="css/proto9d.css">-->
+	<link rel="stylesheet" href="css/miacolors.css">
+	<link rel="stylesheet" href="css/structure.css">
+	<link rel="stylesheet" href="css/typography.css">
+	<link rel="stylesheet" href="css/animation.css">
+	<link rel="stylesheet" href="css/media-queries.css">
 	
 	<script src="js/modernizr.foundation.js"></script>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.0/jquery.min.js"></script>
+	<script src="js/heatmap.js"></script>
 </head>
-<body>
-
+<body id="full">
+<div class="stripe2"></div>
 <div id="mia-bar" class="clearfix">
 	<div class="row">
 		<div class="five columns">
 			<div class="mainlogo">
-				<img src="images/mia-horz-logo-1.3.png" />
+				<img src="images/mia-semistack-logo.png" />
 			</div>
 		</div>
-		<div class="three columns">
-			&nbsp;
-		</div>
-		<div class="eight columns nopad">
-			<div class="searchbox right">
+		<div class="eight columns">
+			<div class="searchbox">
 				<form method="get" action="/search" id="search">
 		  			<input name="q" type="text" placeholder="Search for an artist, medium, country, or any descriptive term" />
 				</form>
@@ -53,73 +55,84 @@
 </div>
 
 <nav class="top-bar">
+	<section class="row">
+		<ul class="left">
+			<li class="has-dropdown">
+	          <a class="active" href="#">MENU</a>
+	          <ul class="dropdown">
+	            <li><a href="http://collections.artsmia.org">COLLECTION</a></li>
+				<li><a href="http://artsmia.org/index.php?section_id=2">EXHIBITIONS</a></li>
+				<li><a href="http://artsmia.org/index.php?section_id=9">CALENDAR &amp; EVENTS</a></li>
+				<li><a href="http://artsmia.org/index.php?section_id=46">JOIN &amp; INVEST</a></li>
+				<li><a href="http://artsmia.org/index.php?section_id=6">VISIT</a></li>
+				<li><a href="http://artsmia.org/index.php?section_id=5">LEARN</a></li>
+	          </ul>
+	        </li>
 
-    <section class="row">
-      <!-- Left Nav Section -->
-      <ul class="left">
-        
-         <li><a href="http://collections.artsmia.org">COLLECTION</a></li>
-         
-		 <li><a href="http://artsmia.org/index.php?section_id=2">EXHIBITIONS</a></li>
+			<li><a href="http://collections.artsmia.org">COLLECTION</a></li>
+			<li><a href="http://artsmia.org/index.php?section_id=2">EXHIBITIONS</a></li>
+			<li><a href="http://artsmia.org/index.php?section_id=9">CALENDAR &amp; EVENTS</a></li>
+			<li><a href="http://artsmia.org/index.php?section_id=46">JOIN &amp; INVEST</a></li>
+			<li><a href="http://artsmia.org/index.php?section_id=6">VISIT</a></li>
+			<li><a href="http://artsmia.org/index.php?section_id=5">LEARN</a></li>
+			<!--<li><a href="http://artsmia-museum-shop.stores.yahoo.net/">SHOP</a></li>-->
+		</ul>
+	 	<ul class="right">
+			<li id="tix"><a href="https://tickets.artsmia.org/public">TICKETS</a></li>
+	    	<li id="donate"><a href="https://tickets.artsmia.org/public/loader.asp?target=donation.asp?code=1">DONATE</a></li>
+	  	</ul>
+	</section>
+</nav>
 
-        <li><a href="http://artsmia.org/index.php?section_id=9">CALENDAR &amp; EVENTS</a></li>
-
-        <li><a href="http://artsmia.org/index.php?section_id=46">JOIN &amp; INVEST</a></li>
-        
-        <li><a href="http://artsmia.org/index.php?section_id=6">VISIT</a></li>
-        
-        <li><a href="http://artsmia.org/index.php?section_id=5">LEARN</a></li>
-        
-        <li><a href="http://artsmia-museum-shop.stores.yahoo.net/">SHOP</a></li>
-
-      </ul>
-
-      <!-- Right Nav Section -->
-      <ul class="right">
-
-		<li id="tix"><a href="https://tickets.artsmia.org/public">TICKETS</a></li>
-        <li id="donate"><a href="https://tickets.artsmia.org/public/loader.asp?target=donation.asp?code=1">DONATE</a></li>
-        
-      </ul>
-    </section>
-  </nav>
 <div class="stripe"></div>
 
 <div id="hero">
-  <div data-caption="#s1">
+  <div data-caption="#s1" data-thumb="bullet.png">
     <img src="img/more-real.jpg" />
   </div>
-  <div data-caption="#s2">
+  <div data-caption="#s2" data-thumb="bullet.png">
     <img src="img/slide_5.jpg" />
    
   </div>
-  <div data-caption="#s3">
+  <div data-caption="#s3" data-thumb="bullet.png">
     <img src="img/third-thursday.jpg" />
   </div>
 </div>
 
 <div class="orbit-caption row" id="s1">
 	<div class="caption-wrap">
-		<h4 class="title">More Real</h4>
-   		<p class="description">Nam sed porta est. Vestibulum id massa eu odio rhoncus eleifend.</p>
+		<h4 class="title">More Real?<br />Art in the Age of Truthiness</h4>
+   		<p class="description">
+   			Thursday, March 21, 2013—Sunday, June 9, 2013<br />
+			Target Gallery (admission charged)<br />
+			Ticketed Exhibition (FREE for members!)
+		</p>
     	<a class="readmore" href="http://www.artsmia.org/more-real">Learn More</a>
     </div>
 </div>
  <div class="orbit-caption row" id="s2">
  	<div class="caption-wrap">
 		<h4 class="title">Explore the Collection</h4>
-   		<p class="description">Nam sed porta est. Vestibulum id massa eu odio rhoncus eleifend.</p>
-    	<a class="readmore" href="http://www.google.com">Learn More</a>
+   		<p class="description">
+   			The Minneapolis Institute of Arts houses more than 80,000 objects from diverse cultural traditions spanning 5,000 years of world  history.
+   		</p>
+    	<a class="readmore" href="https://collections.artsmia.org/">Learn More</a>
     </div>
 </div>
 <div class="orbit-caption row" id="s3">
 	<div class="caption-wrap">
-		<h4 class="title">Third Thursday</h4>
-    	<p class="description">Nam sed porta est. Vestibulum id massa eu odio rhoncus eleifend.</p>
-    	<a class="readmore" href="http://www.google.com">Learn More</a>
+		<h4 class="title">Third Thursday<br />More Real? Part 2</h4>
+    	<p class="description">
+    		Thursday, April 18, 2013<br />
+			6&#8211;9 p.m.<br />
+			museum-wide
+    	</p>
+    	<a class="readmore" href="http://artsmia.org/index.php?section_id=9&ev_id=4736">Learn More</a>
     </div>
 </div>
+
 <!--<div class="stripe"></div>-->
+
 <div id="addy">
 	<div class="row">
 		<div class="sixteen columns">
@@ -156,7 +169,7 @@
 		  			<div class="infoblock">
 		  				<span class="iheader dkGreyBk gold">Coming Up</span>
 		  				<div id="upcoming-slider">
-		  					<div class="upcoming-slide">
+		  					<div class="upcoming-slide" data-thumb="bullet.png">
 					  			<div class="upcoming-img"><img src="img/upcoming/itsnew-itsnow.png" alt="It's New/It's Now" /></div>
 					  			<div class="upcoming-text">
 					  				<h4>It's New/It's Now</h4>
@@ -169,7 +182,7 @@
 					  				<p>See iconic, eye-catching works by bold-faced names in the contemporary art world. Ranging in date from the 1960s to the present, this exhibition showcases more than 80 original works on paper.</p>
 								</div>
 							</div>
-							<div class="upcoming-slide">
+							<div class="upcoming-slide" data-thumb="bullet.png">
 					  			<div class="upcoming-img"><img src="img/upcoming/maep-brewer.jpg" alt="MAEP: Allen Brewer and Kristina Estelle" /></div>
 					  			<div class="upcoming-text">
 					  				<h4>MAEP</h4>
@@ -182,7 +195,7 @@
 					  				<p>Allen Brewer: "Verbatim" and Kristina Estel: "Posture Is Everything"</p>
 								</div>
 							</div>
-							<div class="upcoming-slide">
+							<div class="upcoming-slide" data-thumb="bullet.png">
 					  			<div class="upcoming-img"><img src="img/upcoming/sarah-jones2.jpg" alt="New Pictures 8: Sarah Jones" /></div>
 					  			<div class="upcoming-text">
 					  				<h4>New Pictures 8</h4>
@@ -220,10 +233,8 @@
 		</div>
 	</div>
 </div>
-
 <div id="footer">
 	<footer class="row">
-		<!-- header row-->
 		<div class="sixteen columns" id="footer_header_row">
 		  <div class="row">
 		  		<div class="two columns"><a id="faq" href="">Frequently Asked Questions</a></div>
@@ -236,121 +247,9 @@
 				<div class="two columns"><a id="support"href="http://artsmia.org/index.php?section_id=4">Support<br />The MIA</a></div>
 		  </div>
 		</div>
-		<!--content drawer-->
-		<div class="sixteen columns" id="footer_content_row">
-		  <div class="row">
-		  		<div class="two columns">
-		  			<ul id="faq_content">
-		  				<li><a href="http://artsmia.org/index.php?section_id=7">What are you?</a></li>
-		  				<li><a href="http://artsmia.org/index.php?section_id=30">How do I get there?</a></li>
-		  				<li><a href="http://artsmia.org/index.php?section_id=9">What's on today?</a></li>
-		  				<li><a href="http://artsmia.org/index.php?section_id=1235">Where do I start?</a></li>
-		  				<li><a href="http://artsmia.org/index.php?section_id=39">Can I talk to a person?</a></li>
-		  				<li><a href="http://artsmia.org/index.php?section_id=157">Can I learn more about you?</a></li>
-		  			</ul>
-		  		</div>
-		  		<div class="two columns">
-		  			<ul id="exhibitions_content">
-		  				<li><a href="">Featured Exhibitions</a></li>
-		  				<li><a href="">Current Exhibitions</a></li>
-		  				<li><a href="">Upcoming Exhibitions</a></li>
-		  				<li><a href="">Minnesota Artists Exhibition Program</a></li>
-		  				<li><a href="">Wells Fargo Center</a></li>
-		  				<li><a href="">Past Exhibitions</a></li>
-		  			</ul>
-		  		</div>
-		  		<div class="two columns">
-		  			<ul id="collections_content">
-		  				<li><a href="">Arts of Africa and the Americas</a></li>
-		  				<li><a href="">Asian Art</a></li>
-		  				<li><a href="">Contemporary Art</a></li>
-		  				<li><a href="">Decorative Arts, Textiles &amp; Sculpture</a></li>
-		  				<li><a href="">Paintings</a></li>
-		  				<li><a href="">Photography &amp; New Media</a></li>
-		  				<li><a href="">Prints &amp; Drawings</a></li>
-		  				<li><a href="">Purcell Cutts House</a></li>
-		  				<li><a href="">Curatorial Staff</a></li>
-		  				<li><a href="">Collection Related Online Programs</a></li>
-		  				<li><a href="">Provenance Research</a></li>
-		  				<li><a href="">Recent Acquisitions</a></li>
-		  				<li><a href="">Deaccessions</a></li>
-		  			</ul>
-		  		</div>
-				<div class="two columns">
-		  			<ul id="about_content">
-		  				<li><a href="">Contact Us</a></li>
-		  				<li><a href="">Phone Directory</a></li>
-		  				<li><a href="">Job Opportunities</a></li>
-		  				<li><a href="">Volunteer Opportunities</a></li>
-		  				<li><a href="">Internships</a></li>
-		  				<li><a href="">Board of Trustees</a></li>
-		  				<li><a href="">Mission &amp; History</a></li>
-		  				<li><a href="">Private Weddings &amp; Events</a></li>
-		  				<li><a href="">Museum Reports</a></li>
-		  				<li><a href="">Press Room</a></li>
-		  				<li><a href="">News &amp; Information</a></li>
-		  				<li><a href="">Museum Highlights</a></li>
-		  				<li><a href="">FRAME</a></li>
-		  			</ul>
-		  		</div>
-				<div class="two columns">
-		  			<ul id="visit_content">
-		  				<li><a href="">Hours & Location</a></li>
-		  				<li><a href="">Directions, Maps, Parking</a></li>
-		  				<li><a href="">Museum Shop</a></li>
-		  				<li><a href="">Museum Library</a></li>
-		  				<li><a href="">Gallery Maps</a></li>
-		  				<li><a href="">Restaurant, Caf&eacute; &amp; Area Dining</a></li>
-		  				<li><a href="">For Families</a></li>
-		  				<li><a href="">Audio Tours</a></li>
-		  				<li><a href="">Services For Visitors with Disabilities</a></li>
-		  				<li><a href="">Print &amp; Photographs Study Rooms</a></li>
-		  				<li><a href="">Policies &amp; Guidelines</a></li>
-		  				<li><a href="">Tours</a></li>
-		  				<li><a href="">Interactive Learning Stations</a></li>
-		  				<li><a href="">MIA Today</a></li>
-		  				<li><a href="">Personalize Your Visit</a></li>
-		  			</ul>
-		  		</div>
-				<div class="two columns">
-		  			<ul id="education_content">
-		  				<li><a href="">Teacher Resources</a></li>
-		  				<li><a href="">Tours</a></li>
-		  				<li><a href="">Art Carts</a></li>
-		  				<li><a href="">Print &amp; Photographs Study Rooms</a></li>
-		  				<li><a href="">ArtsConnectEd</a></li>
-		  				<li><a href="">Art Adventure</a></li>
-		  				<li><a href="">Online Resources</a></li>
-		  			</ul>
-		  		</div>
-				<div class="two columns">
-		  			<ul id="calendar_content">
-		  				<li><a href="">Third Thursday</a></li>
-		  				<li><a href="">Print &amp; Drawing Fair</a></li>
-		  				<li><a href="">Family Day</a></li>
-		  				<li><a href="">Youth &amp; Family Programs</a></li>
-		  				<li><a href="">Art in Bloom</a></li>
-		  				<li><a href="">Sketching in the Galleries</a></li>
-		  				<li><a href="">Lectures &amp; Films</a></li>
-		  				<li><a href="">Gala 2013</a></li>
-		  			</ul>
-		  		</div>
-				<div class="two columns">
-		  			<ul id="support_content">
-		  				<li><a href="">Join/Renew/Donate</a></li>
-		  				<li><a href="">Special Interests</a></li>
-		  				<li><a href="">Membership</a></li>
-		  				<li><a href="">Corporate Giving</a></li>
-		  				<li><a href="">The Friends</a></li>
-		  				<li><a href="">Institutional Support</a></li>
-		  				<li><a href="">Planned Giving</a></li>
-		  				<li><a href="">Affinity Groups</a></li>
-		  			</ul>
-		  		</div>
-		  </div>
-		</div>
 	</footer>
 </div>
+
 <div class="stripe"></div>
 	<script src="js/jquery.js"></script>
 	<script src="js/foundation.min.js"></script>
@@ -361,15 +260,7 @@
 	
 	<!--user scripts-->
 	<script src="js/global.js"></script>
-	
-	<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
-	<!--<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>-->
-	
-	<script src="js/jquery.mCustomScrollbar.min.js"></script>
-	
-	<!--<script type="text/javascript" src="js/proto9c.js"></script>-->
-	
+	<script src="js/proto9d.js"></script>
   
 	<script type="text/javascript">
 		//$(document).foundation();
@@ -378,33 +269,21 @@
 	              animation: 'fade',
 	              advanceSpeed: 6000,
 				  timer: true,
-				  bullets: true
+				  bullets: true,
+				  bulletThumbs: true,
+  				  bulletThumbLocation: 'img/orbit-thumbs/'
 				});
 			
 			$('#upcoming-slider').orbit({
 				  animation: 'fade',
 				  advanceSpeed: 8000,
 				  timer: true,
-				  fluid: '9x14',
+				  fluid: '9x16',
 				  directionalNav: false,
-				  bullets:true
+				  bullets:true,
+				  bulletThumbs: true,
+  				  bulletThumbLocation: 'img/orbit-thumbs/' 
 				});
-				
-			$('#featured').orbit({
-	              animation: 'fade',
-	              advanceSpeed: 5000,
-				  timer: true,
-				  directionalNav: false,
-				  bullets: true
-				});
-			/*
-			$(".upcoming-text").mCustomScrollbar({
-					scrollButtons:{
-						enable:true
-					}
-				});
-			*/
-			
 	     });
 	</script>
 
