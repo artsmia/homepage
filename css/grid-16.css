@@ -1,0 +1,46 @@
+/* The Grid ---------------------- */
+
+.row { width: 940px; max-width: 100%; min-width: 768px; margin: 0 auto; }
+.row .row { width: auto; max-width: none; min-width: 0; margin: 0 -10px; }
+.row.collapse .column, .row.collapse .columns { padding: 0; }
+.row .row { width: auto; max-width: none; min-width: 0; margin: 0 -10px; }
+.row .row.collapse { margin: 0; }
+
+.column, .columns { float: left; min-height: 1px; padding: 0 10px; position: relative; }
+.column.centered, .columns.centered { float: none; margin: 0 auto; }
+
+[class*="column"] + [class*="column"]:last-child { float: right; }
+
+[class*="column"] + [class*="column"].end { float: left; }
+
+.one, .row .one { width: 6.25%; }
+
+.two, .row .two { width: 12.5%; }
+
+.three, .row .three { width: 18.75%; }
+
+.four, .row .four { width: 25%; }
+
+.five, .row .five { width: 31.25%; }
+
+.six, .row .six { width: 37.5%; }
+
+.seven, .row .seven { width: 43.75%; }
+
+.eight, .row .eight { width: 50%; }
+
+.nine, .row .nine { width: 56.25%; }
+
+.ten, .row .ten { width: 62.5%; }
+
+.eleven, .row .eleven { width: 68.75%; }
+
+.twelve, .row .twelve { width: 75%; }
+
+.thirteen, .row .thirteen { width: 81.25%; }
+
+.fourteen, .row .fourteen { width: 87.5%; }
+
+.fifteen, .row .fifteen { width: 93.75%; }
+
+.sixteen, .row .sixteen { width: 100%; }
