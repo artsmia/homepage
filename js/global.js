@@ -1,4 +1,8 @@
 /* Heatmap stats */
+var index = 0;
+var heatmaps;
+var mapdata;
+
 window.onload = function(){
  
     // heatmap configuration
@@ -89,6 +93,47 @@ var save_heatmap = function callback(dataSet) {
       }
    });
 };
+
+var load_heatmap = function callback(filename) {
+   $("body canvas").remove();
+ 
+   // heatmap configuration
+   var config = {
+      element: document.getElementById("full"),
+      radius: 30,
+      opacity: 50
+   };
+    
+   //creates and initializes the heatmap
+   window.heatmap = h337.create(config);
+   var active = false;
+ 
+   $.ajax({
+      type: 'POST',
+      async: false,
+      url: 'admin.php',
+      dataType: 'json',
+      success: function (response) {
+         heatmaps = response;
+         $.ajax({
+            type: 'POST',
+            async: false,
+            url: 'admin.php',
+            dataType: 'json',
+            data: 'file=' + heatmaps[index],
+            success: function (map_data) {
+               mapdata = map_data;
+               window.heatmap.store.setDataSet(map_data);
+               index++;
+            }
+         });
+      }
+   });
+    
+   // Kill the heatmap after adding data;
+   window.heatmap.store.addDataPoint = function() {};
+}
+
 
 window.onbeforeunload = function (e) {
    var dataSet = window.heatmap.store.exportDataSet();
