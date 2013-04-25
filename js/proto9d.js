@@ -32,10 +32,15 @@ $(document).ready(function() {
 	})
 	
 	$('.socialbox').click(function(){
-		//alert("loc: "+$(this).data('loc'));
 		var whatNum = $(this).data('loc');
 		var whatLoc = socialArray[whatNum];
 	  	window.location = whatLoc;
+	});
+	
+	$(".orbit-wrapper > .orbit-caption").live("click", function(){ 
+		var whatLoc = $(this).children('.caption-wrap').data('link');
+	  	window.location = whatLoc;
+	  	return false;
 	});
 	
 	//@media only screen and (max-width: 760px) {
