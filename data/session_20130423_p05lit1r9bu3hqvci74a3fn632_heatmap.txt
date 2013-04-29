@@ -1,0 +1,1 @@
+{"max":1,"data":[{"x":1263,"y":936,"count":1},{"x":297,"y":46,"count":1},{"x":1144,"y":403,"count":1},{"x":1262,"y":375,"count":1},{"x":926,"y":360,"count":1},{"x":821,"y":401,"count":1},{"x":375,"y":370,"count":1},{"x":353,"y":382,"count":1},{"x":113,"y":398,"count":1}],"screen_width":1264,"screen_height":646,"browser":{"mozilla":true,"version":"20.0"}}

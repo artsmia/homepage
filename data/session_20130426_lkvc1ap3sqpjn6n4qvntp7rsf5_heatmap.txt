@@ -1,0 +1,1 @@
+{"max":2,"data":[{"x":266,"y":26,"count":1},{"x":287,"y":35,"count":2}],"screen_width":533,"screen_height":295,"browser":{"webkit":true,"version":"533.1","safari":true}}

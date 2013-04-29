@@ -1,0 +1,1 @@
+{"max":4,"data":[{"x":597,"y":140,"count":4}],"screen_width":640,"screen_height":360,"browser":{"webkit":true,"version":"534.30","safari":true}}

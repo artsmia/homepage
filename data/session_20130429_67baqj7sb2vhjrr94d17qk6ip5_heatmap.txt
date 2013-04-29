@@ -1,0 +1,1 @@
+{"max":1,"data":[],"screen_width":1298,"screen_height":640,"browser":{"webkit":true,"version":"536.28.10","safari":true}}

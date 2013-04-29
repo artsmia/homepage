@@ -1,0 +1,1 @@
+{"max":1,"data":[],"screen_width":1349,"screen_height":673,"browser":{"msie":true,"version":"10.0"}}
