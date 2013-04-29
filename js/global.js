@@ -1,3 +1,15 @@
+/* Hours Logic */
+var museum_hours = {"0":"11AM—5PM", "1":"Closed", "2":"10AM—5PM", "3":"10AM—5PM", "4":"10AM—9PM", "5":"10AM—5PM", "6":"10AM—5PM"};
+
+var set_museum_hours = function callback() {
+   date = new Date();
+   day = date.getDay();
+   
+   $("#hours").append('<a href="http://www.artsmia.org/index.php?section_id=29">Today: ' + museum_hours[day] + '</a> \
+                 <a href="http://www.artsmia.org/index.php?section_id=29">Tomorrow: ' + museum_hours[day + 1] + '</a> \
+                 <a class="clearfix" href="http://www.artsmia.org/index.php?section_id=29">SEE ALL<span></span></a>');
+}
+
 /* Heatmap stats */
 var index = 0;
 var heatmaps;
