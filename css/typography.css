@@ -369,6 +369,12 @@ ul.orbit-bullets li.active.has-thumb {
 	background-position: -20px 0px;
 }
 
+.infoblock a h6{
+	text-transform:uppercase;
+	font-size:0.9em;
+}
+
+
 /*
 .infoblock:hover{
 	opacity: 0.8;
