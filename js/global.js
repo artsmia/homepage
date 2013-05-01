@@ -10,6 +10,21 @@ var set_museum_hours = function callback() {
                  <a class="clearfix" href="http://www.artsmia.org/index.php?section_id=29">SEE ALL<span></span></a>');
 }
 
+/* Calendar Highlights */
+
+
+var get_calendar_highlights = function callback() {
+      $.ajax({
+         url: 'http://www.artsmia.org/calendar_feed.php',
+         dataType: 'jsonp',
+         success: function(event_response) {
+            $.each(event_response, function(key, value) {
+               $("#telephone").append('<a href="' + value.link +'">' + value.title + '<br />' + value.date + ' ' + value.start + '-' + value.end + '<br />' + value.location + '</a>');
+            });
+         }
+      });
+}
+
 /* Heatmap stats */
 var index = 0;
 var heatmaps;
