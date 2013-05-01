@@ -20,6 +20,7 @@
     $.fn.placeholder                ? $('input, textarea').placeholder() : null;
 
     set_museum_hours();
+    get_calendar_highlights();
   });
 
   // UNCOMMENT THE LINE YOU WANT BELOW IF YOU WANT IE8 SUPPORT AND ARE USING .block-grids

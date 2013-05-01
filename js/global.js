@@ -21,6 +21,7 @@ var get_calendar_highlights = function callback() {
             $.each(event_response, function(key, value) {
                $("#telephone").append('<a href="' + value.link +'">' + value.title + '<br />' + value.date + ' ' + value.start + '-' + value.end + '<br />' + value.location + '</a>');
             });
+            $("#telephone").append('<a class="clearfix" href="http://www.artsmia.org/index.php?section_id=9">SEE ALL<span></span></a>');
          }
       });
 }
