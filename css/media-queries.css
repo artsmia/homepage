@@ -55,7 +55,7 @@
 
 @media only screen and (min-width: 1025px) {
 	.row { width: 95%; }
-	#mia-bar { padding: 2em 0; }
+	#mia-bar { padding: 1em 0; }
 	.orbit-wrapper .orbit-caption { width: 95%; left: 10px; }
 	.orbit-wrapper .orbit-caption .caption-wrap{ /*width: 31.25%;*/ width: 30%; }
 }

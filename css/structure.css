@@ -26,7 +26,7 @@
 }
 
 .mainlogo{
-	padding:2em 0 1em 5px;
+	padding:1em 0 1em 5px;
 	/*min-width:239px;
 	min-height:44px;*/
 	min-width:143px;
@@ -50,7 +50,7 @@
 	margin:0;
 	padding:0;
 	width:inherit;
-	padding-top:2em;
+	padding-top:1em;
 	width:100%;
 }
 
@@ -71,6 +71,7 @@
 
 .top-bar {
 	margin:0;
+	/*padding:0;*/
 	padding-bottom:1em;
 }
 
@@ -136,7 +137,8 @@ ul.orbit-bullets li.active.has-thumb {}
 }
 
 .infoblock span.iheader{
-	padding:0.5em 0.5em 0.5em 13px;
+	/*padding:0.5em 0.5em 0.5em 13px;*/
+	padding:0.5em 0.5em 0.5em 0;
 	display: block;
 }
 
