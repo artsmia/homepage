@@ -442,6 +442,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', end
 	background:#0063DB url("../images/social/24/flickr-24.png") center center no-repeat;
 }
 
+.pinterest{
+	background:#CB2027 url("../images/social/24/pinterest-24.png") center center no-repeat;
+}
+
 .twitter{
 	background:#39A9E0 url("../images/social/24/twitter-24.png") center center no-repeat;
 }

@@ -14,7 +14,7 @@
 	.top-bar {padding-bottom: 0;}
 	.searchbox form {margin:0;}
 	.mainlogo{text-align:center;}
-	.mainlogo img {width:143px;height:63px;margin:0 auto;}
+	.mainlogo img {width:306px;height:51px;margin:0 auto;}
 }
 
 
@@ -32,6 +32,10 @@
 	
 	.flickr{
 		background:#0063DB url("../images/social/16/flickr-16.png") center center no-repeat;
+	}
+	
+	.pinterest{
+		background:#CB2027 url("../images/social/16/pinterest-16.png") center center no-repeat;
 	}
 	
 	.twitter{
