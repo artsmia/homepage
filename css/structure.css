@@ -16,6 +16,19 @@
 
 /* mia-bar */
 
+#freebug{
+	padding:0.5em 0 0.25em; 
+	margin-top:-1em;
+	background-color:#298658;
+	color:#fff;
+	text-align:center; 
+	font-family: "myriad-pro-condensed", sans-serif;
+	-moz-box-shadow: 0 0 5px #bbb;
+	-webkit-box-shadow: 0 0 5px #bbb;
+	box-shadow: 0 0 5px #bbb;
+}
+
+
 #mia-bar{
 	/*width:100%;*/
 	/*margin:2em 20px 1em;*/
