@@ -168,3 +168,7 @@ window.onbeforeunload = function (e) {
    var dataSet = window.heatmap && window.heatmap.store.exportDataSet();
    dataSet && save_heatmap(dataSet);
 };
+
+var replace_tel_link_in_IE = function() {
+  $('.lt-ie9 a[href^=tel]').attr('href', 'http://www.artsmia.org/index.php?section_id=39')
+}

@@ -21,6 +21,7 @@
 
     set_museum_hours();
     get_calendar_highlights();
+    replace_tel_link_in_IE();
   });
 
   // UNCOMMENT THE LINE YOU WANT BELOW IF YOU WANT IE8 SUPPORT AND ARE USING .block-grids
