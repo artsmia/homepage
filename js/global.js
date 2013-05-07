@@ -32,6 +32,7 @@ var heatmaps;
 var mapdata;
 
 window.onload = function(){
+  if($('.lt-ie9').size() > 0) return;
  
     // heatmap configuration
     var config = {
@@ -164,6 +165,6 @@ var load_heatmap = function callback(filename) {
 
 
 window.onbeforeunload = function (e) {
-   var dataSet = window.heatmap.store.exportDataSet();
-   save_heatmap(dataSet);
+   var dataSet = window.heatmap && window.heatmap.store.exportDataSet();
+   dataSet && save_heatmap(dataSet);
 };
