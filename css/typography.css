@@ -398,6 +398,16 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', end
 	font-size:0.9em;
 }
 
+.infoblock .upcoming-img a {
+	background-color: #222;
+	color:#ededed;
+}
+
+.infoblock .upcoming-img a:hover {
+	background-color: #e2e2e2;
+	color:#222;
+}
+
 
 /*
 .infoblock:hover{
