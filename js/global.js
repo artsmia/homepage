@@ -30,8 +30,10 @@ var get_calendar_highlights = function callback() {
 var index = 0;
 var heatmaps;
 var mapdata;
+var disable_heatmap_for_old_IE = function () { return $('.lt-ie9').size() > 0 };
 
 window.onload = function(){
+  if(disable_heatmap_for_old_IE()) return;
  
     // heatmap configuration
     var config = {
@@ -164,6 +166,12 @@ var load_heatmap = function callback(filename) {
 
 
 window.onbeforeunload = function (e) {
-   var dataSet = window.heatmap.store.exportDataSet();
-   save_heatmap(dataSet);
+  if(window.heatmap) { // Save the heatmap if it's enabled
+    var dataSet = window.heatmap.store.exportDataSet();
+    save_heatmap(dataSet);
+  }
 };
+
+var replace_tel_link_in_IE = function() {
+  $('.lt-ie9 a[href^=tel]').attr('href', 'http://www.artsmia.org/index.php?section_id=39')
+}

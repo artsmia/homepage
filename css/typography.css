@@ -120,9 +120,8 @@ body{
 	color:white;
 }
 
-.top-bar ul > li a:not(.button) {
+body .top-bar .row ul > li a {
 	color:#1788a3;
-	/*color:#fff;*/
 }
 
 .top-bar ul > li:not(.name):hover, .top-bar ul > li:not(.name).active, .top-bar ul > li:not(.name):focus { background: #222; }
