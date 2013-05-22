@@ -609,7 +609,7 @@ ul.orbit-bullets li.active.has-thumb { background-position: 0 0; border-top: 2px
 /* Correct timer in IE */
 .lt-ie9 .timer { display: none !important; }
 
-.lt-ie9 .orbit-caption { background: black; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000,endColorstr=#99000000); zoom: 1; }
+.lt-ie9 .orbit-caption { background: black; zoom: 1; }
 
 @media only screen and (max-width: 767px) { .orbit.orbit-stack-on-small img.fluid-placeholder { visibility: visible; }
   .orbit.orbit-stack-on-small .orbit-slide { position: static; margin-bottom: 10px; } }
