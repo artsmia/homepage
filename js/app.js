@@ -21,6 +21,7 @@
 
     set_museum_hours();
     get_calendar_highlights();
+    set_feedback_widget();
     replace_tel_link_in_IE();
   });
 

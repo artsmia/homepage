@@ -26,6 +26,12 @@ var get_calendar_highlights = function callback() {
       });
 }
 
+/* Uservoice feedback widget binding */
+
+var set_feedback_widget = function callback() {
+   $('#feedback').click( function() { showClassicWidget(); return false; } );
+}
+
 /* Heatmap stats */
 var index = 0;
 var heatmaps;
