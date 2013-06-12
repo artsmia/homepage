@@ -15,6 +15,9 @@
 	.searchbox form {margin:0;}
 	.mainlogo{text-align:center;}
 	.mainlogo img {width:306px;height:51px;margin:0 auto;}
+  #promo {
+    margin-top: 0px;
+  }
 }
 
 
