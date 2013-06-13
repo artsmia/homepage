@@ -38,12 +38,14 @@
 	padding:0;
 }
 
-.mainlogo{
-	padding:1em 0 1em 5px;
-	/*min-width:239px;
-	min-height:44px;*/
-	min-width:143px;
-	min-height:63px;
+.mainlogo h1 {
+  background-image: url('../images/mia-horz-logo.png');
+  background-image: none, url(../images/logo.svg), url(../images/1-line-logotype.svg);
+  background-repeat: no-repeat;
+  background-position: left, left center, 1.1em center;
+  background-size: auto, 1em, 80%;
+  text-indent: -100em;
+  margin-bottom: 0.5em;
 }
 
 .mainlogo a, .mainlogo a:hover {
@@ -52,7 +54,7 @@
 	margin:0;
 }
 
-.mainlogo a:hover img{
+.mainlogo a:hover h1 {
 	opactiy:0.5;
 }
 
