@@ -13,8 +13,7 @@
 	.searchbox {padding-top:0.25em;}
 	.top-bar {padding-bottom: 0;}
 	.searchbox form {margin:0;}
-	.mainlogo{text-align:center;}
-	.mainlogo img {width:306px;height:51px;margin:0 auto;}
+  .mainlogo h1 { width: 7em; margin: .25em auto -.25em auto; max-width: 90%; }
   #promo {
     margin-top: 0px;
   }
@@ -52,7 +51,6 @@
 	.vimeo{
 		background:#44BBFF url("../images/social/16/vimeo-16.png") center center no-repeat;
 	}
-
 }
 
 
