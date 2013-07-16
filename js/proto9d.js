@@ -6,6 +6,7 @@ socialArray[2] = "http://www.twitter.com/artsmia";
 socialArray[3] = "http://www.vimeo.com/artsmia";
 socialArray[4] = "http://www.youtube.com/user/artsmia";
 socialArray[5] = "http://pinterest.com/search/boards/?q=minneapolis%20institute%20of%20arts";
+socialArray[6] = "http://instagram.com/artsmia#";
 
 $(document).ready(function() {
 
@@ -29,6 +30,9 @@ $(document).ready(function() {
 				break;
 			case "pinterest":
 				$(this).data('loc', 5);
+				break;
+			case "instagram":
+				$(this).data('loc', 6);
 				break;
 			default:
 				break;

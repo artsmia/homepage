@@ -268,9 +268,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', end
 
 
 #footer {
-	color:#ededed;
+	color:#efefef;
 	background-color:#222;
-	text-align:center;
+	text-align:left;
 }
 
 #footer ul li {
@@ -289,6 +289,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', end
 	background-color:#fff;
 	color:#333;
 }
+
+#footer ul.sponsors li {
+	line-height:1.4em
+}	
 
 
 
@@ -321,13 +325,18 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', end
 
 #footer_header_row div div a{
 	color:#ccc;
-	/*color:#333;*/
-	text-transform:uppercase;
+	/*color:#333;
+	text-transform:uppercase;*/
 	font-family: "myriad-pro-condensed", sans-serif;
-	font-weight:700;
-	font-size:1.15em;
-	text-align:center;
+	font-weight:300;
+	font-size:.95em;
+	text-align:left;
 }
+
+#footer_header_row div div a:hover{
+	padding-left:12px;
+}
+
 
 #footer_header_row div div{
 	border-left:1px solid #165260;
@@ -337,16 +346,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', end
 	border-left:none;
 }
 
-
+/*
 #footer_header_row div div:hover {
 	background-color:#ccc;
 }
 
 #footer_header_row div div a:hover {
-	/*color:#0f3c46;*/
+	color:#0f3c46;
 }
 
 #footer_content_row{}
+*/
 
 .infoblock{
 	color:white;
@@ -449,6 +459,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', end
 
 .flickr{
 	background:#0063DB url("../images/social/24/flickr-24.png") center center no-repeat;
+}
+
+.instagram{
+	background:#3F729B url("../images/social/24/instagram-24.png") center center no-repeat;
 }
 
 .pinterest{
