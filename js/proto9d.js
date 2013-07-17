@@ -45,6 +45,10 @@ $(document).ready(function() {
 	  	window.location = whatLoc;
 	});
 	
+	$('.gm').click(function(){
+	  	window.location = "http://generalmills.com";
+	});
+	
 	$(".orbit-wrapper > .orbit-caption").live("click", function(){ 
 		var whatLoc = $(this).children('.caption-wrap').data('link');
 	  	window.location = whatLoc;
