@@ -171,8 +171,20 @@
 				<div class="six columns" id="coming-up">
 		  			<div class="infoblock">
 		  				<span class="iheader dkGreyBk blue">Coming Up</span>
-		  				<div id="upcoming-slider">
-							<div class="upcoming-slide" data-thumb="bullet.png">
+
+		  				<div 	id="upcoming-slider" 
+                  		class="cycle-slideshow" 
+                  		data-cycle-fx="fade" 
+                  	   data-timeout="8000" 
+                     	data-speed="400" 
+                     	data-slides="div.upcoming-slide"  
+                     	data-swipe="true"
+                        data-cycle-pager=".upcoming-pager" 
+                        data-cycle-pager-template="<li class='upcoming-bullet'></li>"
+                     	data-pause-on-hover="true">
+                        
+                        
+							<div class="upcoming-slide">
 					  			<div class="upcoming-img"><a href="http://www.artsmia.org/index.php?section_id=2&exh_id=4780"><img src="img/upcoming/clark.jpg" alt="Clark Collection" /></a></div>
 					  			<div class="upcoming-text">
 					  				<h4>The Audacious Eye</h4>
@@ -184,7 +196,7 @@
 					  				</span>
 								</div>
 							</div>
-							<div class="upcoming-slide" data-thumb="bullet.png">
+							<div class="upcoming-slide">
 					  			<div class="upcoming-img"><a href="http://www.artsmia.org/index.php?section_id=2&exh_id=4768"><img src="img/upcoming/sarah-jones2.jpg" alt="New Pictures 8: Sarah Jones" /></a></div>
 					  			<div class="upcoming-text">
 					  				<h4>New Pictures 8</h4>
@@ -198,6 +210,7 @@
 								</div>
 							</div>
 						</div>
+	               <ul class="upcoming-pager"></ul>
 					</div>
 		  		</div>
 				<div class="five columns clearfix" id="promo">
@@ -274,6 +287,7 @@
 	<script src="js/jquery.js"></script>
 	<script src="js/foundation.min.js"></script>
 	<script src="js/jquery.foundation.orbit.js"></script>
+   <script src="js/jquery.cycle2.min.js"></script>
 	
 	<!-- Initialize JS Plugins -->
 	<script src="js/app.js"></script>
@@ -293,17 +307,18 @@
 				  bulletThumbs: true,
   				  bulletThumbLocation: 'img/orbit-thumbs/'
 				});
-			
+			/*
 			$('#upcoming-slider').orbit({
 				  animation: 'fade',
 				  advanceSpeed: 8000,
 				  timer: true,
-				  fluid: '9x15',
+				  fluid: true,
 				  directionalNav: false,
 				  bullets:true,
 				  bulletThumbs: true,
   				  bulletThumbLocation: 'img/orbit-thumbs/' 
-				});
+				}); 
+			*/
 	     });
 	</script>
         <script type="text/javascript">
