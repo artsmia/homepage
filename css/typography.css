@@ -1,4 +1,4 @@
-/* typography + color + border + background rules */
+http://54.235.106.49/artsmia//* typography + color + border + background rules */
 
 body{
 	/*background-color:#000;*/
@@ -485,10 +485,30 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cccccc', end
 	background:#44BBFF url("../images/social/24/vimeo-24.png") center center no-repeat;
 }
 
-.upcoming-slider{}
-
-.upcoming-slide{
+#upcoming-slider{
 	background-color:#222;
+	padding-bottom:50px;
+}
+#upcoming-slider .upcoming-img a{
+	margin-top:0px;
+}
+ul.upcoming-pager{
+	display:block;
+	text-align:center;
+	list-style:none;
+	position:relative;
+	top:-40px;
+}
+ul.upcoming-pager li{
+	display:inline-block;
+	background:url('../img/orbit-thumbs/bullet.png') no-repeat;
+	width:26px;
+	height:26px;
+	opacity:0.5;
+	cursor:pointer;
+}
+ul.upcoming-pager li.cycle-pager-active{
+	opacity:1;
 }
 
 .upcoming-img{}
